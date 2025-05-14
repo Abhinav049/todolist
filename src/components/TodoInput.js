@@ -4,8 +4,7 @@ function TodoInput(props) {
   const [inputText, setInputText] = useState("");
   const handleEnterPress = (e) => {
     if (e.keyCode === 13) {
-      props.add;
-      List(inputText);
+      props.addList(inputText);
       setInputText("");
     }
   };
